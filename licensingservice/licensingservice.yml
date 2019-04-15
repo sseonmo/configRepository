@@ -3,7 +3,7 @@ spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform:  "postgres"
 
 # jpq query
-spring.jpa.properties.show-sql: "true"
+spring.jpa.show-sql: "true"
 spring.jpa.properties.hibernate.format_sql: "true"
 #spring.jpa.properties.hibernate.use_sql_comments: "true"
 logging.level.org.hibernate.type.descriptor.sql: "trace"
