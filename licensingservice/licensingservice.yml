@@ -20,7 +20,7 @@ spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation: "true"
 # 먼말인지? 잘.. 참조 - https://ryudaewan.wordpress.com/2018/02/08/pgsql_jpa/
 spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: "false"
 spring.jpa.hibernate.ddl-auto: "create-drop"
-redis.server: "redis"
+redis.server: "localhost"
 redis.port: "6379"
 signing.key: "345345fsdfsf5345"
 server.port: "8080"

@@ -8,6 +8,10 @@ zuul.routes.authenticationservice: /auth/**
 #zuul.routes.licensestatic.serviceId: licensestatic
 #zuul.routes.licensestatic.ribbon.listOfServers: http://licenseservice-static1:8081, http://licenseservice-static2:8082
 #ribbon.eureka.enabled: false
+
+# 동일한 시스템 내에서 공유되는 요청 헤더를 외부(downstream)로 노출하지 않아야하는 경우가 있을 수 있다
+# sensitiveHeaders를 설정하여 내부에서 사용되는 헤더값이 노출되는 것을 막을 수 있다
+# 참조 - https://supawer0728.github.io/2018/03/11/Spring-Cloud-Zuul/
 zuul.sensitiveHeaders: Cookie,Set-Cookie
 zuul.debug.request: true
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
